@@ -1,1 +1,1 @@
-# Deski
+# Official Deski application releases.
