@@ -1,87 +1,94 @@
-# Official Deski application releases.
-# Deski
+<div align="center">
 
-### Your phone. Your controls. Your workflow.
+<img src="assets/deski-logo.png" alt="Deski logo" width="132" />
 
-**Deski turns your Android phone into a customizable control deck for your Windows PC.**
+# DESKI
 
-Configure buttons, organize pages, launch applications, open websites, and access supported actions from your phone through Deski Companion for Windows.
+### Your devices. One simple setup.
 
-## Downloads
+**Turn your Android phone into a customizable control deck for your Windows PC.**
 
-**[Download the latest Deski release](https://github.com/Boyshakya/Deski/releases/latest)**
+[**Download Deski**](https://github.com/Boyshakya/Deski/releases/latest) ·
+[Report a bug](https://github.com/Boyshakya/Deski/issues) ·
+[Request a feature](https://github.com/Boyshakya/Deski/issues)
 
-Available downloads:
-
-| Application | File | Platform |
-|---|---|---|
-| Deski Companion | `Deski-Companion-Setup-1.0.0.exe` | Windows |
-| Deski Android | `Deski-Android-1.0.0.apk` | Android |
-
-Open the latest release and download the appropriate file from its **Assets** section.
-
-## Features
-
-- **Customizable layouts:** Choose deck dimensions from 1×1 to 6×6.
-- **Custom buttons:** Configure buttons for supported actions and shortcuts.
-- **Multiple pages:** Organize controls into separate pages.
-- **Application launching:** Launch supported Windows applications directly from your phone.
-- **Website shortcuts:** Open websites with a single tap.
-- **Application icons:** Recognize configured applications through their icons.
-- **Wireless communication:** Connect your Android device to your Windows PC over your local network.
-- **Persistent configuration:** Retain saved buttons, pages, and layouts across application restarts.
-
-## Getting Started
-
-### 1. Install Deski Companion
-
-Download `Deski-Companion-Setup-1.0.0.exe` from the latest release and run the installer on your Windows PC.
-
-Launch Deski Companion after installation.
-
-### 2. Install Deski Android
-
-Download `Deski-Android-1.0.0.apk` to your Android device and install it.
-
-Android may require permission to install applications from the source you're using.
-
-### 3. Connect your devices
-
-1. Connect your Android device and Windows PC to the same local network.
-2. Open Deski Companion on Windows.
-3. Open Deski on Android.
-4. Discover or select your Companion device and establish the connection.
-
-### 4. Configure your deck
-
-Create and configure buttons, organize them into pages, select your preferred layout, and start using your phone to control your PC.
-
-## Release Notes
-
-Each release includes its version number, changes, and downloadable application files.
-
-**[View all releases and changelogs](https://github.com/Boyshakya/Deski/releases)**
-
-## Troubleshooting
-
-**Can't find your PC?**
-
-Confirm that both devices are connected to the same local network and that Windows Firewall isn't blocking Deski Companion.
-
-**Can't connect?**
-
-Restart both applications and try connecting again. Check your network configuration if the problem persists.
-
-**Having another issue?**
-
-Please report reproducible bugs through the [GitHub Issues](https://github.com/Boyshakya/Deski/issues) page, including your Windows version, Android version, and steps to reproduce the problem.
-
-## Installation and Distribution
-
-Deski Android is distributed as a direct APK download, outside Google Play. Deski Companion is distributed through the Windows installer attached to each release.
-
-This repository contains release downloads and release information, not the application source code.
+</div>
 
 ---
 
-**Deski — A customizable control surface for your PC.**
+## Your phone. Your controls.
+
+Deski brings quick desktop actions to a customizable Android control surface. Build a deck around the actions and apps you use most, then connect your phone to **Deski Companion for Windows**.
+
+Whether you're gaming, creating content, streaming, or just working at your PC, Deski is designed to keep useful controls close at hand.
+
+<div align="center">
+  <img src="assets/windows-companion.jpg" alt="Deski Companion for Windows showing a customizable control deck" width="100%" />
+  <sub>Deski Companion · Windows control-deck editor</sub>
+</div>
+
+## See it on Android
+
+<div align="center">
+  <img src="assets/android-control-deck.png" alt="Deski Android app showing configurable control buttons" width="32%" />
+  &nbsp;&nbsp;
+  <img src="assets/android-connection.png" alt="Deski Android device connection screen" width="32%" />
+</div>
+
+<sub>Android control deck and companion discovery screens.</sub>
+
+## What you can do
+
+- **Customize your control deck** — arrange actions in a grid and organize controls into pages.
+- **Trigger desktop actions** — use supported actions from your phone instead of hunting through windows and menus.
+- **Control media and audio** — access supported playback, volume, and mute controls.
+- **Open apps and workflows** — put frequently used applications and actions on your deck.
+- **Make it yours** — create a setup that fits your gaming, streaming, editing, or everyday workflow.
+- **Connect to your PC** — find and connect to a Deski Companion on your network.
+
+> Available actions depend on the installed version and your configuration.
+
+## Getting started
+
+1. Open the [latest GitHub release](https://github.com/Boyshakya/Deski/releases/latest).
+2. Download the Android APK and Windows Companion package, if both are published for that release.
+3. Install and launch both applications.
+4. Keep the devices on the network required by the current connection setup.
+5. Use the Android app's companion scan/connection flow and follow the prompts shown in the apps.
+6. Configure your deck and test an action.
+
+If a connection fails, check that both applications are running, the devices can communicate over the network, and Windows Firewall is not blocking the Companion.
+
+## Project technologies
+
+| Component | Technology |
+|---|---|
+| Android app | Kotlin · Jetpack Compose |
+| Windows Companion | C# · WinUI 3 · .NET |
+| Local persistence | SQLite where used |
+| Device communication | WebSocket-based communication |
+
+## Current status
+
+Deski is under active development. Some integrations and actions may depend on configuration or the current release. Check the [releases page](https://github.com/Boyshakya/Deski/releases) for published builds and release notes.
+
+Found a bug or have an idea? [Open an issue](https://github.com/Boyshakya/Deski/issues) and include your app version, Windows/Android version, steps to reproduce, and relevant logs or screenshots. **Do not post passwords, pairing secrets, or other private information.**
+
+## Contributing
+
+Contributions and actionable feedback are welcome.
+
+1. Open an issue to discuss substantial changes.
+2. Fork the repository and create a branch for your work.
+3. Keep changes focused and test the affected application.
+4. Submit a pull request describing the change and how you tested it.
+
+## License
+
+Check the repository's `LICENSE` file for the terms that apply to this project. If no license file is present, reuse and redistribution permissions should not be assumed.
+
+---
+
+<div align="center">
+  <sub><b>Deski</b> · Built for everyday control.</sub>
+</div>
